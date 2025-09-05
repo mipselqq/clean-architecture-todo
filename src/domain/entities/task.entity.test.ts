@@ -1,7 +1,7 @@
 import { describe, it } from "node:test";
 import assert from "node:assert";
 import { Task } from "./task.entity.js";
-import { ValidationError } from "./validation.error.js";
+import { ValidationError } from "../errors/validation.error.js";
 
 describe("Task Entity", () => {
     it("should create a new task with a title", () => {
