@@ -1,6 +1,6 @@
 import { describe, it } from "node:test";
 import assert from "node:assert";
-import { CreateTaskUseCase } from "./create-task.usecase";
+import { CreateTaskUseCase } from "../create-task.usecase";
 import { InMemoryTaskRepository } from "infrastructure/persistence/in-memory-task.repository";
 import { Task } from "domain/entities/task.entity";
 

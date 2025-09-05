@@ -1,7 +1,7 @@
 import { describe, it } from "node:test";
 import assert from "node:assert";
-import { CompleteTaskUseCase } from "./complete-task.usecase";
-import { CreateTaskUseCase } from "./create-task.usecase";
+import { CompleteTaskUseCase } from "../complete-task.usecase";
+import { CreateTaskUseCase } from "../create-task.usecase";
 import { InMemoryTaskRepository } from "infrastructure/persistence/in-memory-task.repository";
 
 describe("CompleteTaskUseCase", () => {

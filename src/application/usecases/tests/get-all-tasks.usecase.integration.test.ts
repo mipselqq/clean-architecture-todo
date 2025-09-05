@@ -1,7 +1,7 @@
 import { describe, it } from "node:test";
 import assert from "node:assert";
-import { GetAllTasksUseCase } from "./get-all-tasks.usecase";
-import { CreateTaskUseCase } from "./create-task.usecase";
+import { GetAllTasksUseCase } from "../get-all-tasks.usecase";
+import { CreateTaskUseCase } from "../create-task.usecase";
 import { InMemoryTaskRepository } from "infrastructure/persistence/in-memory-task.repository";
 
 describe("GetAllTasksUseCase", () => {
