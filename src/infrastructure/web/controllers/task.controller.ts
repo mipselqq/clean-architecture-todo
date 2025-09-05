@@ -1,9 +1,6 @@
 import { Request, Response } from "express";
-
-import { CompleteTaskUseCase } from "../../../application/usecases/complete-task.usecase";
-import { CreateTaskUseCase } from "../../../application/usecases/create-task.usecase";
-import { GetAllTasksUseCase } from "../../../application/usecases/get-all-tasks.usecase";
-import { ensureErrorBase } from "../../errors/base-error-ensurance";
+import { ensureErrorBase } from "infrastructure/errors";
+import { CreateTaskUseCase, GetAllTasksUseCase, CompleteTaskUseCase } from "application/usecases";
 
 interface CreateTaskBody {
     title: string | undefined;

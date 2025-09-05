@@ -1,9 +1,7 @@
 import express from "express";
-import { InMemoryTaskRepository } from "../persistence/in-memory-task.repository";
-import { CreateTaskUseCase } from "../../application/usecases/create-task.usecase";
-import { GetAllTasksUseCase } from "../../application/usecases/get-all-tasks.usecase";
-import { CompleteTaskUseCase } from "../../application/usecases/complete-task.usecase";
-import { TaskController } from "./controllers/task.controller";
+import { InMemoryTaskRepository } from "infrastructure/persistence";
+import { TaskController } from "infrastructure/web/controllers";
+import { CompleteTaskUseCase, CreateTaskUseCase, GetAllTasksUseCase } from "application/usecases";
 
 const app = express();
 

@@ -1,14 +1,14 @@
-import { describe, it } from 'node:test';
-import assert from 'node:assert';
-import { CreateTaskUseCase } from './create-task.usecase';
-import { InMemoryTaskRepository } from '../../infrastructure/persistence/in-memory-task.repository';
-import { Task } from '../../domain/entities/task.entity';
+import { describe, it } from "node:test";
+import assert from "node:assert";
+import { CreateTaskUseCase } from "./create-task.usecase";
+import { InMemoryTaskRepository } from "infrastructure/persistence/in-memory-task.repository";
+import { Task } from "domain/entities/task.entity";
 
-describe('CreateTaskUseCase', () => {
-  it('should create a task', async () => {
+describe("CreateTaskUseCase", () => {
+  it("should create a task", async () => {
     const taskRepository = new InMemoryTaskRepository();
     const createTaskUseCase = new CreateTaskUseCase(taskRepository);
-    const taskTitle = 'My new task';
+    const taskTitle = "My new task";
 
     const createdTask = await createTaskUseCase.execute({ title: taskTitle });
 
