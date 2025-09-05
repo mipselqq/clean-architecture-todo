@@ -1,4 +1,5 @@
 import { randomUUID } from "node:crypto";
+import { ValidationError } from "./validation.error.js";
 
 export class Task {
     private constructor(
@@ -10,7 +11,7 @@ export class Task {
 
     public static create(title: string): Task {
         if (title === "") {
-            throw new Error("Title is required.");
+            throw new ValidationError("Title is required.");
         }
 
         return new Task(randomUUID(), title, false, new Date())

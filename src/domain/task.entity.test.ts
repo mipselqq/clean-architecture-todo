@@ -1,6 +1,7 @@
 import { describe, it } from "node:test";
 import assert from "node:assert";
 import { Task } from "./task.entity.js";
+import { ValidationError } from "./validation.error.js";
 
 describe("Task Entity", () => {
     it("should create a new task with a title", () => {
@@ -12,11 +13,11 @@ describe("Task Entity", () => {
         assert.ok(task.creationDate instanceof Date, "Creation date should be a Date object");
     });
 
-    it("should throw an error if title is empty", () => {
+    it("should throw a ValidationError if title is empty", () => {
         assert.throws(
             () => Task.create(""),
-            new Error("Title is required."),
-            "Should throw an error for empty title"
+            ValidationError,
+            "Should throw a ValidationError for empty title"
         );
     });
 
