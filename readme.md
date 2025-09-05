@@ -13,7 +13,7 @@
 │       │   └── task.ts
 │       ├── infrastructure
 │       │   ├── controller.ts
-│       │   ├── in-memory.repository.ts
+│       │   ├── in-memory-repository.ts
 │       │   └── repository.ts
 │       ├── task.test.ts
 │       └── usecases
@@ -21,8 +21,8 @@
 │           ├── create.ts
 │           ├── get-all.ts
 │           └── tests
-│               ├── complete-task.test.ts
-│               ├── create-task.test.ts
-│               └── get-all-tasks.test.ts
+│               ├── complete.test.ts
+│               ├── create.test.ts
+│               └── get-all.ts
 └── tsconfig.json
 ```
