@@ -1,6 +1,8 @@
+import { ensureErrorBase } from "base-error-ensurance";
 import { Request, Response } from "express";
-import { ensureErrorBase } from "infrastructure/errors";
-import { CreateTaskUseCase, GetAllTasksUseCase, CompleteTaskUseCase } from "application/usecases";
+import { CompleteTaskUseCase } from "task/usecases/complete";
+import { CreateTaskUseCase } from "task/usecases/create";
+import { GetAllTasksUseCase } from "task/usecases/get-all";
 
 interface CreateTaskBody {
     title: string | undefined;
