@@ -4,7 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "web:debug": "ts-node ./src/infrastructure/web/server.ts"
+        "web:debug": "tsx ./src/infrastructure/web/server.ts",
+        "test": "tsx --test",
+        "typecheck": "tsc --noEmit"
     },
     "keywords": [],
     "author": "",
@@ -16,6 +18,10 @@
     },
     "devDependencies": {
         "@types/express": "^5.0.3",
-        "@types/node": "^24.3.1"
+        "@types/jest": "^30.0.0",
+        "@types/node": "^24.3.1",
+        "jest": "^30.1.3",
+        "ts-jest": "^29.4.1",
+        "tsx": "^4.20.5"
     }
 }
