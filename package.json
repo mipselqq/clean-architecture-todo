@@ -1,0 +1,21 @@
+{
+    "name": "clear-arhcitecture-todo",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "web:debug": "ts-node ./src/infrastructure/web/server.ts"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "dependencies": {
+        "express": "^5.1.0",
+        "puregram": "^2.26.8"
+    },
+    "devDependencies": {
+        "@types/express": "^5.0.3",
+        "@types/node": "^24.3.1"
+    }
+}

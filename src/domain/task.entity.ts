@@ -1,0 +1,22 @@
+import { randomUUID } from "node:crypto";
+
+export class Task {
+    private constructor(
+        public readonly id: string,
+        public title: string,
+        public isCompleted: boolean,
+        public readonly creationDate: Date,
+    ) {}
+
+    public static create(title: string): Task {
+        if (title === "") {
+            throw new Error("Title is required.");
+        }
+
+        return new Task(randomUUID(), title, false, new Date())
+    }
+
+    public complete(): void {
+        this.isCompleted = true;
+    }
+}
