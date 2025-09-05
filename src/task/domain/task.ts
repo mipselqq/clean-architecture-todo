@@ -1,5 +1,5 @@
 import { randomUUID } from "node:crypto";
-import { ValidationError } from "./errors/validation.error";
+import { ValidationError } from "./errors/validation";
 
 export class Task {
     private constructor(

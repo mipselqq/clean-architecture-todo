@@ -4,25 +4,25 @@
 ├── package.json
 ├── readme.md
 ├── src
-│   ├── base-error-ensurance.ts
+│   ├── error.utils.ts
 │   ├── main.ts
 │   └── task
 │       ├── domain
 │       │   ├── errors
-│       │   │   └── validation.error.ts
+│       │   │   └── validation.ts
 │       │   └── task.ts
 │       ├── infrastructure
-│       │   ├── in-memory-task.repository.ts
-│       │   ├── task.controller.ts
-│       │   └── task.repository.ts
+│       │   ├── controller.ts
+│       │   ├── in-memory.repository.ts
+│       │   └── repository.ts
 │       ├── task.test.ts
 │       └── usecases
 │           ├── complete.ts
 │           ├── create.ts
 │           ├── get-all.ts
 │           └── tests
-│               ├── complete-task-integration.test.ts
-│               ├── create-task-integration.test.ts
-│               └── get-all-tasks-integration.test.ts
+│               ├── complete-task.test.ts
+│               ├── create-task.test.ts
+│               └── get-all-tasks.test.ts
 └── tsconfig.json
 ```

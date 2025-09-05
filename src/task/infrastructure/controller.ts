@@ -1,4 +1,4 @@
-import { ensureErrorBase } from "base-error-ensurance";
+import { ensureErrorBase } from "error.utils";
 import { Request, Response } from "express";
 import { CompleteTaskUseCase } from "task/usecases/complete";
 import { CreateTaskUseCase } from "task/usecases/create";

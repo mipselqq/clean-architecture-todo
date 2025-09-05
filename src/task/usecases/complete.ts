@@ -1,5 +1,5 @@
 import { Task } from "task/domain/task";
-import { TaskRepository } from "task/infrastructure/task.repository";
+import { TaskRepository } from "task/infrastructure/repository";
 
 interface CompleteTaskDTO {
     id: string;

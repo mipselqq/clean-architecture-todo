@@ -2,7 +2,7 @@ import { describe, it } from "node:test";
 import assert from "node:assert";
 import { CreateTaskUseCase } from "../create";
 import { Task } from "task/domain/task";
-import { InMemoryTaskRepository } from "task/infrastructure/in-memory-task.repository";
+import { InMemoryTaskRepository } from "task/infrastructure/in-memory-repository";
 
 describe("CreateTaskUseCase", () => {
   it("should create a task", async () => {
