@@ -1,8 +1,8 @@
 import { describe, it } from "node:test";
 import assert from "node:assert";
-import { CreateTaskUseCase } from "../create-task.usecase";
-import { InMemoryTaskRepository } from "infrastructure/persistence/in-memory-task.repository";
-import { Task } from "domain/entities/task.entity";
+import { CreateTaskUseCase } from "../task/create";
+import { InMemoryTaskRepository } from "infrastructure/persistence/in-memory-task-repository";
+import { Task } from "domain/entities/task";
 
 describe("CreateTaskUseCase", () => {
   it("should create a task", async () => {

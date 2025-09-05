@@ -1,3 +1,3 @@
-export * from "./complete-task.usecase";
-export * from "./create-task.usecase";
-export * from "./get-all-tasks.usecase";
+export * from "./task/complete";
+export * from "./task/create";
+export * from "./task/get-all";
