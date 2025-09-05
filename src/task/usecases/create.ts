@@ -1,5 +1,5 @@
-import { Task } from "domain/entities";
-import { TaskRepository } from "application/repositories";
+import { Task } from "task/domain/task";
+import { TaskRepository } from "task/infrastructure/task.repository";
 
 interface CreateTaskDTO {
     title: string;

@@ -1,4 +1,4 @@
-import { Task } from "../../domain/entities/task";
+import { Task } from "./domain/task";
 
 export interface TaskRepository {
     save(task: Task): Promise<void>;

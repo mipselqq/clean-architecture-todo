@@ -1,5 +1,5 @@
-import { TaskRepository } from "application/repositories";
-import { Task } from "domain/entities";
+import { Task } from "task/domain/task";
+import { TaskRepository } from "./task.repository";
 
 export class InMemoryTaskRepository implements TaskRepository {
     private tasks: Map<string, Task> = new Map();

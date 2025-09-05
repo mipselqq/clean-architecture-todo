@@ -7,9 +7,7 @@
     "esModuleInterop": true,
     "baseUrl": "./src",
     "paths": {
-      "application/*": ["application/*"],
-      "domain/*": ["domain/*"],
-      "infrastructure/*": ["infrastructure/*"]
+      "task/*": ["task/*"]
     }
   }
 }
